@@ -5,10 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\WasabiController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\UploaderController;
-use App\Http\Controllers\MediaLibraryController;
 use App\Http\Controllers\SuperadminController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
