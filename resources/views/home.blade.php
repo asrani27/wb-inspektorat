@@ -36,7 +36,6 @@
 <body>
 
     <!--====== HEADER PART START ======-->
-
     <header class="header-area">
         <div class="navgition navgition-transparent">
             <div class="container">

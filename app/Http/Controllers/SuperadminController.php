@@ -15,6 +15,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\PDF as PDF;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Webklex\PDFMerger\Facades\PDFMergerFacade as PDFMerger;
 
@@ -60,7 +61,7 @@ class SuperadminController extends Controller
     }
     public function home()
     {
-        $data = Pengaduan::get();
+        $data = Pengaduan::orderBy('id', 'desc')->paginate(10);
         return view('admin.home', compact('data'));
     }
 
@@ -72,6 +73,19 @@ class SuperadminController extends Controller
         Storage::disk('public')->delete($path);
         $ig->delete();
         return back();
+    }
+    public function tambahPengaduan()
+    {
+        return view('admin.pengaduan.create');
+    }
+
+    public function simpanPengaduan(Request $req)
+    {
+        $param = $req->all();
+        $param['user_id'] = Auth::user()->id;
+        Pengaduan::create($param);
+
+        return redirect('/admin/home')->with('success', 'Aduan berhasil di dikirim');
     }
     public function deletePengaduan($id)
     {

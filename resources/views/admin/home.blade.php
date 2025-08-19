@@ -36,7 +36,7 @@
             </div>
             <!-- Page title actions -->
             <div class="col-auto ms-auto d-print-none">
-
+                <a href="/admin/pengaduan/add" class="btn btn-outline-primary w-100">Tambah Data</a>
             </div>
         </div>
     </div>
@@ -96,7 +96,7 @@
                 <tbody>
                     @foreach ($data as $key => $item)
                     <tr>
-                        <td>{{ $key + 1 }}</td>
+                        <td>{{ $data->firstItem() + $key }}</td>
                         <td>{{$item->nama}}</td>
                         <td>{{$item->nip}}</td>
                         <td>{{$item->email}}</td>
@@ -146,6 +146,7 @@
         </div>
     </div>
 </div>
+{{$data->links()}}
 @endsection
 
 @push('js')

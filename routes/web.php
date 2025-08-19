@@ -51,6 +51,8 @@ Route::middleware(['auth', 'verified', 'user'])->group(function () {
 });
 
 Route::middleware(['auth', 'superadmin'])->group(function () {
+    Route::get('/admin/pengaduan/add', [SuperadminController::class, 'tambahPengaduan']);
+    Route::post('/admin/pengaduan/add', [SuperadminController::class, 'simpanPengaduan']);
     Route::get('/admin/pengaduan/delete/{id}', [SuperadminController::class, 'deletePengaduan']);
     Route::get('/admin/pengaduan/proses/{id}', [SuperadminController::class, 'prosesPengaduan']);
     Route::get('/admin/pengaduan/selesai/{id}', [SuperadminController::class, 'selesaiPengaduan']);
