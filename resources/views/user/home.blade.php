@@ -101,7 +101,7 @@
                         <td>{{$item->nip}}</td>
                         <td>{{$item->telp}}</td>
                         <td>
-                            {{ str($item->isi)->limit(500, '...') }}
+                            {{ str($item->isi)->limit(250, '...') }}
                         </td>
                         <td>
                             @if ($item->status == 0)
