@@ -108,6 +108,11 @@ class SuperadminController extends Controller
         Pengaduan::find($id)->update(['status' => 3]);
         return back()->with('success', 'berhasil di tolakkan');
     }
+    public function lihatPengaduan($id)
+    {
+        $data = Pengaduan::find($id);
+        return view('admin.pengaduan.lihat', compact('data'));
+    }
     public function downloadFoto($id)
     {
         $ig = Instagram::find($id);

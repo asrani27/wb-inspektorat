@@ -124,6 +124,9 @@
                                     Actions
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="/admin/pengaduan/lihat/{{ $item->id }}">
+                                        LIHAT ADUAN
+                                    </a>
                                     <a class="dropdown-item" href="/admin/pengaduan/proses/{{ $item->id }}"
                                         onclick="return confirm('Yakin ingin Diproses?');">
                                         PROSES
