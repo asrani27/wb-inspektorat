@@ -55,6 +55,7 @@
                             <option value="0">BARU MASUK</option>
                             <option value="1">DIPROSES</option>
                             <option value="2">SELESAI</option>
+                            <option value="3">DITOLAK</option>
                         </select>
                     </div>
                 </div>
