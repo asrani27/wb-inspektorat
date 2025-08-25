@@ -101,7 +101,9 @@
                         <td>{{$item->nip}}</td>
                         <td>{{$item->email}}</td>
                         <td>{{$item->telp}}</td>
-                        <td>{{$item->isi}}</td>
+                        <td>
+                            {{ str($item->isi)->limit(500, '...') }}
+                        </td>
                         <td>
                             @if ($item->status == 0)
                             <span class="badge badge-outline text-blue">BARU MASUK</span>
