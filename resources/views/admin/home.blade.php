@@ -114,6 +114,9 @@
                             @if ($item->status == 2)
                             <span class="badge badge-outline text-green">SELESAI</span>
                             @endif
+                            @if ($item->status == 3)
+                            <span class="badge badge-outline text-black">DITOLAK</span>
+                            @endif
                         </td>
                         <td>
                             <div class="dropdown">
