@@ -12,7 +12,9 @@ class HomeController extends Controller
         $total = Pengaduan::count();
         $diproses = Pengaduan::where('status', 1)->count();
         $selesai = Pengaduan::where('status', 2)->count();
+        $ditolak = Pengaduan::where('status', 3)->count();
         $dataPoints = [
+            ['label' => 'Ditolak', 'y' => $ditolak],
             ['label' => 'Selesai', 'y' => $selesai],
             ['label' => 'Diproses', 'y' => $diproses],
             ['label' => 'Total Pengaduan', 'y' => $total]
