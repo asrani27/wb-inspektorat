@@ -105,16 +105,16 @@
                         </td>
                         <td>
                             @if ($item->status == 0)
-
                             <span class="badge bg-blue me-1"></span> Di kirim
                             @endif
                             @if ($item->status == 1)
-
                             <span class="badge bg-danger me-1"></span> Diproses
                             @endif
                             @if ($item->status == 2)
-
                             <span class="badge bg-success me-1"></span> Selesai
+                            @endif
+                            @if ($item->status == 3)
+                            <span class="badge bg-warning me-1">Ditolak</span>
                             @endif
                         </td>
                         {{-- <td class="text-end">
