@@ -115,8 +115,32 @@
                             <span class="badge badge-outline text-green">SELESAI</span>
                             @endif
                         </td>
-
                         <td>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle align-text-top" data-bs-toggle="dropdown">
+                                    Actions
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="/admin/pengaduan/proses/{{ $item->id }}"
+                                        onclick="return confirm('Yakin ingin Diproses?');">
+                                        PROSES
+                                    </a>
+                                    <a class="dropdown-item" href="/admin/pengaduan/selesai/{{ $item->id }}"
+                                        onclick="return confirm('Yakin ingin Diselesaikan?');">
+                                        SELESAI
+                                    </a>
+                                    <a class="dropdown-item" href="/admin/pengaduan/tolak/{{ $item->id }}"
+                                        onclick="return confirm('Yakin ingin Ditolak?');">
+                                        TOLAK
+                                    </a>
+                                    <a class="dropdown-item" href="/admin/pengaduan/delete/{{ $item->id }}"
+                                        onclick="return confirm('Yakin ingin Dihapus?');">
+                                        HAPUS
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        {{-- <td>
 
                             <div class="row g-2 align-items-center">
                                 @if ($item->status == 0)
@@ -139,7 +163,7 @@
                                         onclick="return confirm('Yakin ingin Dihapus?');">Hapus</a>
                                 </div>
                             </div>
-                        </td>
+                        </td> --}}
                     </tr>
                     @endforeach
 
