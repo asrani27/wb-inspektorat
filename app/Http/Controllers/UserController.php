@@ -45,7 +45,7 @@ class UserController extends Controller
         $date = Carbon::now();
         $data = Auth::user()->profile;
 
-        $pengaduan = Pengaduan::get();
+        $pengaduan = Pengaduan::where('user_id', Auth::user()->id)->get();
 
         return view('user.home', compact('data', 'pengaduan'));
     }
