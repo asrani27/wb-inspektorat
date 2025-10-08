@@ -151,7 +151,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>
@@ -209,7 +209,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>
@@ -267,7 +267,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>
@@ -326,7 +326,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>
@@ -384,7 +384,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>
@@ -442,7 +442,7 @@
                         </div>
 
                         <div class="buttom-shape">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg"
                                 viewBox="0 0 350 112.35">
                                 <defs>
                                     <style>

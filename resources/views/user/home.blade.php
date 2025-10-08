@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="table-responsive">
-            <table class="table card-table table-vcenter text-nowrap datatable">
+            <table class="table card-table table-vcenter datatable">
                 <thead>
                     <tr>
                         <th class="w-1">No.
@@ -114,7 +114,7 @@
                             <span class="badge bg-success me-1"></span> Selesai
                             @endif
                             @if ($item->status == 3)
-                            <span class="badge bg-warning me-1">Ditolak</span>
+                            <span class="badge bg-warning me-1"></span> Ditolak
                             @endif
                         </td>
                         {{-- <td class="text-end">
